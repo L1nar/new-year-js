@@ -1,7 +1,7 @@
 let poems = [
     {
         poem:
-        `<p>
+            `<p>
             Желаю мира и добра, <br>
             Любви, душевного тепла! <br>
             Пускай вам этот Новый год <br>
@@ -17,7 +17,7 @@ let poems = [
     },
     {
         poem:
-        `<p>
+            `<p>
             С Новым годом от души <br>
             Вас поздравить мы спешим! <br>
             И желаем впечатлений, <br>
@@ -39,7 +39,7 @@ let poems = [
     },
     {
         poem:
-        `<p>
+            `<p>
             Пусть год уходящий с собой заберет <br>
             Проблемы, недуги, ненастье, <br>
             А новый − здоровье и радость несет, <br> 
@@ -55,12 +55,12 @@ let poems = [
     },
 ]
 
-let wrapper = document.querySelector('.wrapper');   
+let wrapper = document.querySelector('.wrapper');
 let btn = document.getElementById('btn');
 let contentPoems = document.querySelector('.poem');
 
-btn.addEventListener('click', function(){
-    randomIndex = Math.floor(Math.random()*poems.length);
+btn.addEventListener('click', function () {
+    randomIndex = Math.floor(Math.random() * poems.length);
     contentPoems.innerHTML = '';
     contentPoems.innerHTML = poems[randomIndex].poem;
 })

@@ -2,8 +2,10 @@
     box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
     height: 100%;
+    font-family: 'Pacifico', cursive;
 }
 
 body {
@@ -21,10 +23,9 @@ body {
 }
 
 .content {
-    height: 95%;
-    width: 95%;
-    background: linear-gradient(180deg, #fff 1%, rgba(255, 255, 255, 0) 100%);
-    border-radius: 35px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #fffdfd 1%, rgba(255, 255, 255, 0) 100%);
 }
 
 .content__text {
@@ -48,9 +49,14 @@ body {
     color: white;
     font-size: 24px;
     transition: all 0.1;
+    font-family: 'Pacifico', cursive;
+}
+
+.btn:hover {
+    background-color: rgb(0, 97, 243);
+    transition: 0.4s;
 }
 
 .btn:active {
     transform: translate(2px, 2px);
-    background-color: red;
 }
